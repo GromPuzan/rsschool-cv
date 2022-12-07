@@ -1,2 +1,2 @@
 # rsschool-cv
-https://github.com/GromPuzan/rsschool-cv
+https://GromPuzan.github.io/rsschool-cv/
