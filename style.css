@@ -2,6 +2,10 @@
     box-sizing: border-box;
     font-family: 'Open Sans';
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 html {
     scroll-behavior: smooth; 
 }
@@ -51,4 +55,8 @@ h2 {
 }
 .contacts-text {
     font-size: 20px;
+}
+.skills-icon {
+    height: 50px;
+    width: 50px;
 }
