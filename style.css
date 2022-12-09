@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans';
 }
 html {
     scroll-behavior: smooth; 
@@ -15,6 +16,12 @@ html {
 section {
     width: 50%;
 }
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 35px;
+}
 .nav-list {
     display: flex;
     justify-content: space-around;
@@ -29,11 +36,19 @@ section {
 .my-avatar {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .contacts-list{
     list-style-type: none;
 }
+.contacts-item {
+    display: flex;
+    align-items: center;
+}
 .contacts-icon {
     height: 50px;
     width: 50px;
+}
+.contacts-text {
+    font-size: 20px;
 }
