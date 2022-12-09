@@ -8,9 +8,32 @@ html {
     max-width: 1440px;
     margin: 0 auto;
 }
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+section {
+    width: 50%;
+}
 .nav-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+}
+.avatar {
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+}
+.my-avatar {
+    display: flex;
+    justify-content: flex-end;
+}
+.contacts-list{
+    list-style-type: none;
+}
+.contacts-icon {
+    height: 50px;
+    width: 50px;
 }
