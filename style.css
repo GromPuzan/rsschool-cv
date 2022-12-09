@@ -1,4 +1,13 @@
-html {
-    font-size: 18px;
-    font-style: italic;
+* {
+    box-sizing: border-box;
+  }
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+  }
