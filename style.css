@@ -1,6 +1,12 @@
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
 }
 a {
     text-decoration: none;
@@ -13,18 +19,41 @@ html {
     max-width: 1440px;
     margin: 0 auto;
 }
+.main {
+    background-color: #c9e6e1;
+}
 .main-container {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 section {
-    width: 50%;
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 3px solid none;
+    background: #6dc4dc;
+    border-radius:8px;
 }
 h1 {
     font-size: 50px;
 }
-h2 {
-    font-size: 35px;
+.header {
+    background-color:  #6dc4dc;
+}
+.section-title {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.section-subtitle {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.profile {
+    text-align: center;
 }
 .nav-list {
     display: flex;
@@ -39,22 +68,48 @@ h2 {
 }
 .my-avatar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 .contacts-list{
     list-style-type: none;
 }
 .contacts-item {
+    position: relative;
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
 }
-.contacts-icon {
-    height: 50px;
-    width: 50px;
+.contacts-item::before {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-.contacts-text {
-    font-size: 20px;
+.contacts-item:nth-child(1)::before {
+    left: -27px;
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/icons/location-dot-solid.svg);
+}
+.contacts-item:nth-child(2)::before {
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/icons/envelope-solid.svg);
+}
+.contacts-item:nth-child(3)::before {
+    left: -30px;
+    top: 3px;
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/icons/discord.svg);
+}
+.contacts-item:nth-child(4)::before {
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/icons/github.svg);
 }
 .skills-icon {
     height: 50px;
@@ -64,12 +119,14 @@ h2 {
     height: 100px;
     width: 100px;
 }
-footer {
-    padding-top: 15px;
+.footer {
+    display: block;
+    background-color: #6dc4dc;
 }
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    margin: 0 auto;
+
 }

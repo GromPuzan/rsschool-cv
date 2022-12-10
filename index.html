@@ -15,13 +15,13 @@
         <div class="container">
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-item">Contacts</a></li>
-                    <li class="nav-item"><a href="#" class="nav-item">About me</a></li>
-                    <li class="nav-item"><a href="#" class="nav-item">Skills</a></li>
-                    <li class="nav-item"><a href="#" class="nav-item">Code</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-item">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-item">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-item">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-item">Code</a></li>
                     <li class="nav-item"><a href="#" class="nav-item">My projects</a></li>
                     <li class="nav-item"><a href="#education" class="nav-item">Education</a></li>
-                    <li class="nav-item"><a href="#" class="nav-item">Languages</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-item">Languages</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,42 +31,38 @@
             <section class="my-avatar">
                 <img src="./avatar.png" alt="my avatar" class="avatar">
             </section>
-            <section class="my-name">
+            <section class="profile">
                 <h1 class="section-title">
                     Danil Strelnikov
                 </h1>
-                <h2 class="developer">
-                    Front-End Developer
+                <h2 class="section-subtitle">
+                    Junior Front-End Developer
                 </h2>
             </section>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <h2 class="section-title">Contacts</h2>
                 <ul class="contacts-list">
                     <li class="contacts-item">
-                        <img src="./assets/icons/location-dot-solid.svg" alt="location" class="contacts-icon">
                         <div class="contacts-text"><a href="https://goo.gl/maps/Gbm5PxMB5RY5chmp9">Donetsk, Ukraine</a></div>
                     </li>
                     <li class="contacts-item">
-                        <img src="./assets/icons/envelope-solid.svg" alt="email" class="contacts-icon">
                         <div class="contacts-text"><a href="mailto:grompuzan@proton.me">grompuzan@proton.me</a></div>
                     </li>
                     <li class="contacts-item">
-                        <img src="./assets/icons/discord.svg" alt="discord" class="contacts-icon">
-                        <div class="contacts-text"><a href="https://discordapp.com/users/1049274798687129610/">@GromPuzan</a></div>
+                        <div class="contacts-text"><a href="https://discordapp.com/users/1049274798687129610/">@GromPuzan#4707</a></div>
                     </li>
                     <li class="contacts-item">
-                        <img src="./assets/icons/github.svg" alt="github" class="contacts-icon">
                         <div class="contacts-text"> <a href="https://github.com/GromPuzan">GromPuzan</a></div>
                     </li>
                 </ul>
             </section>
-            <section class="summary">
+            <section class="summary" id="summary">
                 <h2 class="section-title">About me</h2>
                 <div class="summary-text">
                     My name is Danil. I am 23 years old and i have just started learning front-end development. I don't have any work experience yet but i am seeking a competitive and challenging environment where i can use all my skills.
                 </div>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h2 class="section-title">Skills</h2>
                 <img src="./assets/icons/html5.svg" alt="html5icon" class="skills-icon">
                 <img src="./assets/icons/css3-alt.svg" alt="css3" class="skills-icon">
@@ -79,22 +75,22 @@
                 <img src="./assets/icons/git-alt.svg" alt="gitlab" class="skills-icon">
                 <img src="./assets/icons/gitlab.svg" alt="gitlab" class="skills-icon">
             </section>
-            <section class="my-code">
-                <h2 class="section-title">My code example</h2>
+            <section class="my-code" id="code">
+                <h2 class="section-title">code</h2>
                 <code>
                     function solution(str){<br>
                         return str.split('').reverse().join('');<br>  
                       }
                 </code>
             </section>
-            <section class="education">
+            <section class="education" id="education">
                 <h2 class="section-title">Education</h2>
                 <div class="education-text">
                     Donetsk National University,Economics department <br>
                     Master's degree in International Economics (2016-2022)
                 </div>
             </section>
-            <section class="languages" id="education">
+            <section class="languages" id="languages">
                 <h2 class="section-title">Languages</h2>
                 <div class="languages-text">
                     Russian - Native<br>
@@ -105,11 +101,11 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="footer-wrapper">
-            <div class="footer-link">
+        <div class="container footer-wrapper">
+            <div>
                 <a href="https://github.com/GromPuzan">©2022 GromPuzan</a>
             </div>
-            <img src="./assets/icons/rs_school_js.svg" alt="RS SCHOOL" class="footer-icon">
+            <a href="https://rs.school/js/"><img src="./assets/icons/rs_school_js.svg" alt="RS SCHOOL" class="footer-icon"></a>
         </div>
     </footer>
 </body>
