@@ -60,3 +60,16 @@ h2 {
     height: 50px;
     width: 50px;
 }
+.footer-icon {
+    height: 100px;
+    width: 100px;
+}
+footer {
+    padding-top: 15px;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
