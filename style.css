@@ -1,4 +1,147 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
 html {
-    font-size: 18px;
-    font-style: italic;
+    scroll-behavior: smooth; 
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.main {
+    background-color: #c9e6e1;
+}
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-title {
+    font-size: 35px;
+}
+section {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: conic-gradient(at 125% 50%, #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7);
+    box-shadow: 0 10px 20px -23px;
+    border-radius:40px 10px;
+}
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.profile-title {
+    text-align: center;
+}
+.header {
+    background: #c9e6e1;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+}
+.section-title {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.4ex;
+}
+.main-title {
+    font-size: 35px;
+}
+.section-subtitle {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.my-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-list{
+    list-style-type: none;
+}
+.contacts-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.contacts-item::before {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contacts-item:nth-child(1)::before {
+    left: -27px;
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/icons/location-dot-solid.svg);
+}
+.contacts-item:nth-child(2)::before {
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/icons/envelope-solid.svg);
+}
+.contacts-item:nth-child(3)::before {
+    left: -30px;
+    top: 3px;
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/icons/discord.svg);
+}
+.contacts-item:nth-child(4)::before {
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/icons/github.svg);
+}
+.skills-icon {
+    height: 50px;
+    width: 50px;
+}
+.courses-list {
+    list-style-type: none;
+}
+.footer-icon {
+    height: 54px;
+    width: 120px;
+}
+.footer {
+    display: block;
+    background: #c9e6e1;
+    border-top: 3px solid rgba(0, 0, 0, 0.05);
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
 }
