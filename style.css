@@ -126,6 +126,9 @@ section {
     height: 50px;
     width: 50px;
 }
+.courses-list {
+    list-style-type: none;
+}
 .footer-icon {
     height: 54px;
     width: 120px;
