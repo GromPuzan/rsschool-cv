@@ -13,7 +13,7 @@ a {
     color: black;
 }
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 .container {
     max-width: 1440px;
